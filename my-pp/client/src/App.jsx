@@ -12,14 +12,16 @@ import Home from './pages/Home'
 import Board from './pages/Board'
 import Signup from './pages/Signup'
 import Login from './pages/Login'
+import Navbar from './components/common/Navbar'
 
 function App() {
   const theme = createTheme({
-    palette: { mode: 'dark' }
+    palette: { mode: 'light' }
   })
 
   return (
     <ThemeProvider theme={theme}>
+      <Navbar/>
       <CssBaseLine />
       <BrowserRouter>
         <Routes>

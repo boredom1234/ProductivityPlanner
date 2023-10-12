@@ -5,6 +5,7 @@ import { setBoards } from "../redux/features/boardSlice"
 import { useNavigate } from "react-router-dom"
 import boardApi from "../api/boardApi"
 import { useState } from "react"
+import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 
 const Home = () => {
   const navigate = useNavigate()
@@ -32,12 +33,12 @@ const Home = () => {
       justifyContent: 'center'
     }}>
       <LoadingButton
-        variant='outlined'
-        color='success'
+        variant='contained'
+        color='error'
         onClick={createBoard}
         loading={loading}
       >
-        Click here to create your first board
+        Click here to create your first board. &nbsp; <AddCircleOutlineIcon />
       </LoadingButton>
     </Box>
   )

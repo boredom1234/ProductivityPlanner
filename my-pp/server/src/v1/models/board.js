@@ -14,13 +14,13 @@ const boardSchema = new Schema({
   },
   title: {
     type: String,
-    default: 'Untitled'
+    default: 'What to do?'
   },
   description: {
     type: String,
-    default: `Add description here
-    🟢 You can add a multiline description
-    🟢 Let's start...`
+    default: `Add description of ypur task here
+    1. Curiosity stabbed the Cat
+    2. Let's start...`
   },
   position: {
     type: Number
